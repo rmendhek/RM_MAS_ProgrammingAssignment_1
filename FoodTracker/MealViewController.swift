@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MealViewController.swift
 //  FoodTracker
 //
 //  Created by Rishma Mendhekar on 8/28/19.
@@ -13,13 +13,13 @@ import UIKit
 
 // have to add UITextFieldDelegate in order to process user input from text box (tutorial 2)
 // UIImagePickerControllerDelegate and UINavigationControllerDelegate were added to allow interaction with the image (tutorial 3)
-class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     //MARK: Properties
 
     @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var mealNameLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var ratingControl: RatingControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +38,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         // changes the label above the text field to whatever was in the text field when user hit "return"
-        mealNameLabel.text = textField.text
+        // ## NEW CODE WILL GO HERE ## //
     }
     
     //MARK: UIImagePickerControllerDelegate
@@ -89,9 +89,5 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         
     }
     
-    @IBAction func setDefaultLabelText(_ sender: UIButton) {
-        
-        mealNameLabel.text = "Default Text"
-    }
 }
 
