@@ -13,6 +13,7 @@
 import UIKit
 // # import unified logging system to send msgs to console
 import os.log
+import FirebaseDatabase
 
 // have to add UITextFieldDelegate in order to process user input from text box (tutorial 2)
 // UIImagePickerControllerDelegate and UINavigationControllerDelegate were added to allow interaction with the image (tutorial 3)
@@ -40,7 +41,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         // "self refers to ViewController class bc it is referenced inside scope of ViewController class def" - tutorial 2
         nameTextField.delegate = self
         
-        // Set up views if editing an existing meal
+        // Set up views of editing an existing meal
         // # " If the meal property is non-nil, set each of the views in MealViewController to display data from the meal property. the meal property will only be non-nil when an existing meal is being edited " - tutorial 8
         if let meal = meal {
             navigationItem.title = meal.name
@@ -134,6 +135,36 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         
         // Set the meal to be passed to the MealTableViewController after the unwind segue.
         meal = Meal(name: name, photo: photo, rating: rating)
+        
+    
+            
+        // ###### Firebase code ######
+        // This code adds the meal that the user has entered into the database. It also keeps track of the number of entries in the database, which is used in the Random Meal Generator.
+        // This code inspired by the following tutorial: https://www.youtube.com/watch?v=JV9Oqyle3iE&t=637s
+        // And used the following stack overflow references:
+        // https://stackoverflow.com/questions/24161336/convert-int-to-string-in-swift
+        // https://developer.apple.com/documentation/swift/int/2995648-random
+        // https://stackoverflow.com/questions/24180346/append-string-in-swift
+        
+        // STEP 1: create a database reference
+        let ref = Database.database().reference()
+        // STEP 2: get the current meal count and add one
+        ref.child("count").observeSingleEvent(of: .value) { (snapshot) in
+            let count = snapshot.value as! Int
+            let newCount = count + 1
+            print("ok here's the count:")
+            print(newCount as Any)
+            
+            // STEP 3: update the count in the database
+            ref.child("count").setValue(newCount)
+            
+            // STEP 4: use new count as the key for the next meal entry
+            let stringNewCount = String(newCount)
+            ref.child(stringNewCount).setValue(["name":name, "rating":rating])
+                
+        }
+        
+        
     }
     
     // MARK: Actions

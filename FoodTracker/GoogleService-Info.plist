@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>743524745200-8ivl8l57i3fqicl829l6bl7760as4upr.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.743524745200-8ivl8l57i3fqicl829l6bl7760as4upr</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDMVWeWPgU8upgv5mBYhWh-VvI693enngU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>743524745200</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.FoodTracker</string>
+	<key>PROJECT_ID</key>
+	<string>mendhekar-40134</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mendhekar-40134.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:743524745200:ios:28220674227ffad0</string>
+	<key>DATABASE_URL</key>
+	<string>https://mendhekar-40134.firebaseio.com</string>
+</dict>
+</plist>

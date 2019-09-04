@@ -45,12 +45,22 @@
                                     <constraint firstAttribute="trailingMargin" secondItem="v4q-Sb-DvG" secondAttribute="trailing" id="BSM-hm-eY6"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEi-jj-kf4">
+                                <rect key="frame" x="109" y="543" width="157" height="30"/>
+                                <state key="normal" title="Tell me what to eat!"/>
+                                <connections>
+                                    <segue destination="MII-Cp-2cg" kind="show" id="R0d-qR-z8h"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bgq-eT-Oxx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="GnY-l8-1Tk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bgq-eT-Oxx" secondAttribute="trailing" constant="15" id="MjL-5C-OcB"/>
+                            <constraint firstItem="WEi-jj-kf4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="X0c-h5-Vsj"/>
                             <constraint firstItem="bgq-eT-Oxx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Z2O-HE-oMg"/>
+                            <constraint firstItem="WEi-jj-kf4" firstAttribute="top" secondItem="bgq-eT-Oxx" secondAttribute="bottom" constant="49" id="bh7-Pz-bXo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WEi-jj-kf4" secondAttribute="trailing" constant="109" id="jb1-xe-tOD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -82,6 +92,79 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2016.8" y="101.19940029985008"/>
+        </scene>
+        <!--Random Meal Generator-->
+        <scene sceneID="Qk2-7W-sh0">
+            <objects>
+                <viewController title="Random Meal Generator" id="MII-Cp-2cg" customClass="WhatToEatViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ed8-cd-dx0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="76n-Af-Om7">
+                                <rect key="frame" x="16" y="124" width="343" height="145"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't know what to eat?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zc-eg-Xam">
+                                        <rect key="frame" x="0.0" y="0.0" width="184" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81J-h8-pfy">
+                                        <rect key="frame" x="0.0" y="28.5" width="201" height="30"/>
+                                        <state key="normal" title="Click here for a random meal."/>
+                                        <connections>
+                                            <action selector="randomMealButton:" destination="7nU-dD-I6l" eventType="touchUpInside" id="Dxc-xX-fP6"/>
+                                            <action selector="setMealText:" destination="MII-Cp-2cg" eventType="touchUpInside" id="f5h-5L-WF7"/>
+                                            <action selector="showRandomMeal:" destination="7nU-dD-I6l" eventType="touchUpInside" id="hkf-YX-HFm"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You should eat..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjp-Hs-rk1">
+                                        <rect key="frame" x="0.0" y="66.5" width="127" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i92-mV-sME">
+                                        <rect key="frame" x="0.0" y="95" width="343" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Vjp-Hs-rk1" firstAttribute="leading" secondItem="76n-Af-Om7" secondAttribute="leading" id="Aae-gM-9bL"/>
+                                    <constraint firstItem="Vjp-Hs-rk1" firstAttribute="top" secondItem="81J-h8-pfy" secondAttribute="bottom" constant="8" id="GRx-mV-VxB"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vjp-Hs-rk1" secondAttribute="trailing" constant="216" id="L9G-Ku-yJs"/>
+                                    <constraint firstItem="i92-mV-sME" firstAttribute="top" secondItem="Vjp-Hs-rk1" secondAttribute="bottom" constant="8" id="TWk-XZ-pZV"/>
+                                    <constraint firstAttribute="bottom" secondItem="i92-mV-sME" secondAttribute="bottom" id="Tpc-zx-xm4"/>
+                                    <constraint firstItem="i92-mV-sME" firstAttribute="leading" secondItem="76n-Af-Om7" secondAttribute="leading" id="Wpk-Ys-5xM"/>
+                                    <constraint firstItem="i92-mV-sME" firstAttribute="top" secondItem="Vjp-Hs-rk1" secondAttribute="bottom" constant="8" id="YWV-Hu-X2g"/>
+                                    <constraint firstAttribute="trailing" secondItem="i92-mV-sME" secondAttribute="trailing" id="hN2-6m-FxI"/>
+                                    <constraint firstItem="2Zc-eg-Xam" firstAttribute="top" secondItem="76n-Af-Om7" secondAttribute="top" id="jqV-bV-JOg"/>
+                                    <constraint firstItem="2Zc-eg-Xam" firstAttribute="leading" secondItem="76n-Af-Om7" secondAttribute="leading" id="nfN-X7-l0H"/>
+                                    <constraint firstItem="Vjp-Hs-rk1" firstAttribute="top" secondItem="81J-h8-pfy" secondAttribute="bottom" constant="8" id="odc-K4-60R"/>
+                                    <constraint firstItem="81J-h8-pfy" firstAttribute="leading" secondItem="76n-Af-Om7" secondAttribute="leading" id="pxi-x3-sXN"/>
+                                    <constraint firstItem="81J-h8-pfy" firstAttribute="top" secondItem="2Zc-eg-Xam" secondAttribute="bottom" constant="8" id="rmM-eW-Ei1"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="76n-Af-Om7" firstAttribute="top" secondItem="RKa-an-Fzm" secondAttribute="top" constant="60" id="0XU-cz-e3m"/>
+                            <constraint firstItem="RKa-an-Fzm" firstAttribute="trailing" secondItem="76n-Af-Om7" secondAttribute="trailing" constant="16" id="v9r-od-6oF"/>
+                            <constraint firstItem="76n-Af-Om7" firstAttribute="leading" secondItem="RKa-an-Fzm" secondAttribute="leading" constant="16" id="yMh-Yr-CQ4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RKa-an-Fzm"/>
+                    </view>
+                    <connections>
+                        <outlet property="randomMealLabel" destination="i92-mV-sME" id="Vnl-VF-Ec4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ARt-SV-SRY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="7nU-dD-I6l" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3012" y="100.29985007496252"/>
         </scene>
         <!--Your Meals-->
         <scene sceneID="QM3-z8-izN">

@@ -12,6 +12,7 @@
 import UIKit
 // sends msgs to console
 import os.log
+import FirebaseDatabase
 
 class MealTableViewController: UITableViewController {
     
@@ -32,6 +33,8 @@ class MealTableViewController: UITableViewController {
         } else {
             loadSampleMeals()
         }
+        
+        
     }
     
     /* BEFORE STACK OVERFLOW

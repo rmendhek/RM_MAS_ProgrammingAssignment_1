@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,13 @@
 		905C25F5231753B600AB2822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905C25F4231753B600AB2822 /* Assets.xcassets */; };
 		905C25F8231753B600AB2822 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905C25F6231753B600AB2822 /* LaunchScreen.storyboard */; };
 		905C2603231753B600AB2822 /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C2602231753B600AB2822 /* FoodTrackerTests.swift */; };
+		90E3A2FB231EF40200891C35 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90E3A2FA231EF40100891C35 /* GoogleService-Info.plist */; };
+		90E3A2FF231F478000891C35 /* WhatToEatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E3A2FE231F478000891C35 /* WhatToEatViewController.swift */; };
 		90E3B809231A017300BB0B6E /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E3B808231A017300BB0B6E /* Meal.swift */; };
 		90E3B80B231A0BB000BB0B6E /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E3B80A231A0BB000BB0B6E /* MealTableViewCell.swift */; };
 		90E3B80D231A106200BB0B6E /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E3B80C231A106200BB0B6E /* MealTableViewController.swift */; };
+		A74F9BDAFA4DA98DFAB3882C /* Pods_FoodTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A2887D9C83FF388D38D6C6 /* Pods_FoodTracker.framework */; };
+		E8E9CC946CBF64AD3C778BB4 /* Pods_FoodTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFF5B72624DFACD1EEA4865 /* Pods_FoodTrackerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D510AAA7BCFB894DC4FA9B8 /* Pods-FoodTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTracker.debug.xcconfig"; path = "Target Support Files/Pods-FoodTracker/Pods-FoodTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		3DFF5B72624DFACD1EEA4865 /* Pods_FoodTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ACC4E35484F148288FBADE2 /* Pods-FoodTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTrackerTests.release.xcconfig"; path = "Target Support Files/Pods-FoodTrackerTests/Pods-FoodTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
 		90396B1F231982110095E996 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		905C25EA231753B400AB2822 /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		905C25ED231753B400AB2822 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,9 +48,14 @@
 		905C25FE231753B600AB2822 /* FoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		905C2602231753B600AB2822 /* FoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerTests.swift; sourceTree = "<group>"; };
 		905C2604231753B600AB2822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90E3A2FA231EF40100891C35 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		90E3A2FE231F478000891C35 /* WhatToEatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatToEatViewController.swift; sourceTree = "<group>"; };
 		90E3B808231A017300BB0B6E /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		90E3B80A231A0BB000BB0B6E /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		90E3B80C231A106200BB0B6E /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
+		C1A2887D9C83FF388D38D6C6 /* Pods_FoodTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54241B2D88413654C198A2B /* Pods-FoodTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTracker.release.xcconfig"; path = "Target Support Files/Pods-FoodTracker/Pods-FoodTracker.release.xcconfig"; sourceTree = "<group>"; };
+		DC1CD53556501B30DA0DD585 /* Pods-FoodTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-FoodTrackerTests/Pods-FoodTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A74F9BDAFA4DA98DFAB3882C /* Pods_FoodTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,18 +71,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8E9CC946CBF64AD3C778BB4 /* Pods_FoodTrackerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		610078C9EF9B3A3DE2162BA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D510AAA7BCFB894DC4FA9B8 /* Pods-FoodTracker.debug.xcconfig */,
+				C54241B2D88413654C198A2B /* Pods-FoodTracker.release.xcconfig */,
+				DC1CD53556501B30DA0DD585 /* Pods-FoodTrackerTests.debug.xcconfig */,
+				5ACC4E35484F148288FBADE2 /* Pods-FoodTrackerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		905C25E1231753B400AB2822 = {
 			isa = PBXGroup;
 			children = (
 				905C25EC231753B400AB2822 /* FoodTracker */,
 				905C2601231753B600AB2822 /* FoodTrackerTests */,
 				905C25EB231753B400AB2822 /* Products */,
+				610078C9EF9B3A3DE2162BA4 /* Pods */,
+				F4CBD137CA687D7E145B6D1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +112,7 @@
 		905C25EC231753B400AB2822 /* FoodTracker */ = {
 			isa = PBXGroup;
 			children = (
+				90E3A2FE231F478000891C35 /* WhatToEatViewController.swift */,
 				905C25ED231753B400AB2822 /* AppDelegate.swift */,
 				905C25EF231753B400AB2822 /* MealViewController.swift */,
 				90E3B808231A017300BB0B6E /* Meal.swift */,
@@ -95,6 +123,7 @@
 				905C25F4231753B600AB2822 /* Assets.xcassets */,
 				905C25F6231753B600AB2822 /* LaunchScreen.storyboard */,
 				905C25F9231753B600AB2822 /* Info.plist */,
+				90E3A2FA231EF40100891C35 /* GoogleService-Info.plist */,
 			);
 			path = FoodTracker;
 			sourceTree = "<group>";
@@ -108,6 +137,15 @@
 			path = FoodTrackerTests;
 			sourceTree = "<group>";
 		};
+		F4CBD137CA687D7E145B6D1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1A2887D9C83FF388D38D6C6 /* Pods_FoodTracker.framework */,
+				3DFF5B72624DFACD1EEA4865 /* Pods_FoodTrackerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 905C2607231753B600AB2822 /* Build configuration list for PBXNativeTarget "FoodTracker" */;
 			buildPhases = (
+				4F4C5C02DF2BED4BEC3FA4ED /* [CP] Check Pods Manifest.lock */,
 				905C25E6231753B400AB2822 /* Sources */,
 				905C25E7231753B400AB2822 /* Frameworks */,
 				905C25E8231753B400AB2822 /* Resources */,
+				ABADA09DB61887E0721479D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +172,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 905C260A231753B600AB2822 /* Build configuration list for PBXNativeTarget "FoodTrackerTests" */;
 			buildPhases = (
+				7FB413D23442EF18838755A6 /* [CP] Check Pods Manifest.lock */,
 				905C25FA231753B600AB2822 /* Sources */,
 				905C25FB231753B600AB2822 /* Frameworks */,
 				905C25FC231753B600AB2822 /* Resources */,
@@ -189,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				905C25F8231753B600AB2822 /* LaunchScreen.storyboard in Resources */,
+				90E3A2FB231EF40200891C35 /* GoogleService-Info.plist in Resources */,
 				905C25F5231753B600AB2822 /* Assets.xcassets in Resources */,
 				905C25F3231753B400AB2822 /* Main.storyboard in Resources */,
 			);
@@ -203,6 +245,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F4C5C02DF2BED4BEC3FA4ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FB413D23442EF18838755A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodTrackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABADA09DB61887E0721479D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodTracker/Pods-FoodTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodTracker/Pods-FoodTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodTracker/Pods-FoodTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		905C25E6231753B400AB2822 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -211,6 +317,7 @@
 				90E3B809231A017300BB0B6E /* Meal.swift in Sources */,
 				905C25F0231753B400AB2822 /* MealViewController.swift in Sources */,
 				90396B20231982110095E996 /* RatingControl.swift in Sources */,
+				90E3A2FF231F478000891C35 /* WhatToEatViewController.swift in Sources */,
 				905C25EE231753B400AB2822 /* AppDelegate.swift in Sources */,
 				90E3B80D231A106200BB0B6E /* MealTableViewController.swift in Sources */,
 				90E3B80B231A0BB000BB0B6E /* MealTableViewCell.swift in Sources */,
@@ -373,6 +480,7 @@
 		};
 		905C2608231753B600AB2822 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D510AAA7BCFB894DC4FA9B8 /* Pods-FoodTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -390,6 +498,7 @@
 		};
 		905C2609231753B600AB2822 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C54241B2D88413654C198A2B /* Pods-FoodTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -407,6 +516,7 @@
 		};
 		905C260B231753B600AB2822 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC1CD53556501B30DA0DD585 /* Pods-FoodTrackerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -427,6 +537,7 @@
 		};
 		905C260C231753B600AB2822 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ACC4E35484F148288FBADE2 /* Pods-FoodTrackerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
